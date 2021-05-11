@@ -7,7 +7,7 @@
         "args": {}
     },
     "data_loader": {
-        "type": "MnistDataLoader",
+        "type": "DataLoader",
         "args":{
             "data_dir": "data/",
             "batch_size": 128,
