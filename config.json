@@ -6,10 +6,20 @@
         "type": "MnistModel",
         "args": {}
     },
-    "data_loader": {
+    "train_data_loader": {
         "type": "DataLoader",
         "args":{
-            "data_dir": "data/",
+            "key": "train",
+            "batch_size": 128,
+            "shuffle": true,
+            "validation_split": 0.1,
+            "num_workers": 2
+        }
+    },
+        "val_data_loader": {
+        "type": "DataLoader",
+        "args":{
+            "key": "val",
             "batch_size": 128,
             "shuffle": true,
             "validation_split": 0.1,

@@ -8,12 +8,12 @@ import torch
 import json
 import cv2
 import os
-from utils.image import flip, color_aug
-from utils.image import get_affine_transform, affine_transform
-from utils.image import gaussian_radius, draw_umich_gaussian, draw_msra_gaussian
-from utils.image import draw_dense_reg
-from utils.utils import Data_anchor_sample
-from utils.Randaugmentations import Randaugment
+from data_loader.center_face_utils.image import flip, color_aug
+from data_loader.center_face_utils.image import get_affine_transform, affine_transform
+from data_loader.center_face_utils.image import gaussian_radius, draw_umich_gaussian, draw_msra_gaussian
+from data_loader.center_face_utils.image import draw_dense_reg
+from data_loader.center_face_utils.utils import Data_anchor_sample
+from data_loader.center_face_utils.Randaugmentations import Randaugment
 import math
 from PIL import Image
 import re
