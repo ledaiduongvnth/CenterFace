@@ -3,8 +3,18 @@
     "n_gpu": 1,
 
     "arch": {
-        "type": "MnistModel",
-        "args": {}
+        "type": "MobileNetSeg",
+        "args": {
+            "base_name": "mobilenetv2_10",
+            "heads": {
+                "hm": 1,
+                "wh": 2,
+                "hm_offset": 2,
+                "landmarks": 10
+            },
+            "head_conv": 64,
+            "pretrained": true
+        }
     },
     "train_data_loader": {
         "type": "DataLoader",
